@@ -16,10 +16,8 @@ spec:
         app: sample-app
     spec:
       containers:
-      - command:
-        - /app/sample-app
-        image: jehadnasser/sample-go-app:v0.1.0
-        name: sample-app
+      - name: sample-app
+        image: jehadnasser/sample-web-app:v0.1.0
         ports:
         - containerPort: 8080
         resources:

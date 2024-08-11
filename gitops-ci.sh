@@ -3,7 +3,7 @@
 export VERSION=$(git rev-parse HEAD | cut -c1-7)
 
 # Builds and pushe to a container registry with the unique version
-export NEW_IMAGE="jehadnasser/sample-go-app:${VERSION}"
+export NEW_IMAGE="jehadnasser/sample-web-app:${VERSION}"
 docker build -t ${NEW_IMAGE} .
 docker push ${NEW_IMAGE}
 
