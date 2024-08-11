@@ -19,7 +19,7 @@ spec:
       - name: sample-app
         image: jehadnasser/sample-web-app:v0.1.0
         ports:
-        - containerPort: 8080
+        - containerPort: 80
         resources:
           limits:
             cpu: "1"
