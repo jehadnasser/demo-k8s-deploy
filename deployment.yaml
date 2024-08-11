@@ -11,21 +11,21 @@ spec:
       app: sample-app
   template:
     metadata:
-      namespace: sample-app
       labels:
         app: sample-app
+      namespace: sample-app
     spec:
       containers:
       - command:
         - /app/sample-app
-        image: jehadnasser/sample-go-app:v0.1.0
+        image: jehadnasser/sample-go-app:2f60f7e
         name: sample-app
         ports:
         - containerPort: 8080
         resources:
           limits:
             cpu: "1"
-            memory: "512Mi"
+            memory: 512Mi
           requests:
             cpu: "0.5"
-            memory: "256Mi"
+            memory: 256Mi
