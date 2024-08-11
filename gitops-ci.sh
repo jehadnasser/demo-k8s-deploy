@@ -28,4 +28,5 @@ mv /tmp/newdeployment.yaml deployment.yaml
 # Commits and pushes the manifest changes to the deployment cofig repo(the gitops source of truth)
 git commit deployment.yaml -m "Automatic: Update sample-app image to ${NEW_IMAGE}"
 git push
+cd ..
 rm -rf demo-k8s-deploy
