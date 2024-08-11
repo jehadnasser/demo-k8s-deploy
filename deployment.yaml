@@ -16,8 +16,8 @@ spec:
       namespace: sample-app
     spec:
       containers:
-      - name: sample-app
-        image: jehadnasser/sample-web-app:v0.1.0
+      - image: jehadnasser/sample-web-app:fbf6f4c
+        name: sample-app
         ports:
         - containerPort: 80
         resources:
